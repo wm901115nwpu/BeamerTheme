@@ -4,31 +4,34 @@
 \section{Introduction}
 
 \begin{frame}
-    \frametitle{Latex and Beamer}
+	\frametitle{Introduction}
+	\begin{figure}[h]
+\centering
+\includegraphics[width=8cm,height=5cm]{imgs/1.png}
+\caption{Comparison between (a) our single-stage solution and (b) existing two-stage solution to multi-person pose estimation. The proposed SPM model directly predicts structured poses of multiple persons in a single stage, offering a more compact pipeline and attractive efficiency advantages over two-stage based top-down or bottom-up strategies. See more details in the main text.}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Introduction}
     
-    LaTeX is a high-quality typesetting system; 
-    it includes features designed for the production of 
-    technical and scientific documentation.
+    Multi-person pose estimation from a single monocular RGB image aims to simultaneously isolate and locate body joints of multiple person instances. It is a fundamental yet challenging task with broad applications in action recognition, person Re-ID, pedestrian tracking, etc.
 
     \vspace{0.4cm}
 
     \pause
-
-    Beamer is a LaTeX class to create powerful, 
-    flexible and nice-looking presentations and slides. 
     
-    The beamer class is focussed on producing (on-screen) presentations, 
-    along with support material such as handouts and speaker notes.
+   Existing methods typically adopt two-stage solutions. As shown in Figure(b), they either follow the top-Existing methods typically adopt two-stage solutions. As shown in Figure 1 (b), they either follow the top-down strategy that employs off-the- shelf detectors to localize person instances at first and then locates their joints individually; or the bottom-up strategy that locates all the body joints at first and then assigns them to the corresponding person. 
     
 \end{frame}
 
-\section{Beamer Basic}
+\section{Background}
 \subsection{Hightlight}
 
 \begin{frame}
     \frametitle{Block and Alert}
 
-    \begin{block}{Pythagorean theorem}
+    \begin{block}{hdhdh theorem}
         \vspace*{-\baselineskip}\setlength\belowdisplayshortskip{0.6pt}
         $$a^2 + b^2 = c^2$$
         % \vspace*{-\baselineskip}\setlength\belowdisplayshortskip{0.1pt}
@@ -123,7 +126,7 @@
     \end{itemize}
 \end{frame}
 
-\section{Beamer More}
+\section{Structured pose representation}
 
 \subsection{Split Screen}
 
@@ -215,8 +218,9 @@
     $$P\left(A=2\middle|\frac{A^2}{B}>4\right)$$
 
     $$( a ), [ b ], \{ c \}, | d |, \| e \|,
-    \langle f \rangle, \lfloor g \rfloor,
+    \langle f \rangle, \lfloor g \rfloor,Experiments
     \lceil h \rceil, \ulcorner i \urcorner$$
+    
 \end{frame}
 
 \begin{frame}{Equation3}
@@ -228,6 +232,12 @@
 \end{frame}
 
 
+\section{Single-stage multi-person pose machine}
+\subsection{Regression targets}
+\subsection{Network architecture}
+\subsection{Training and inference}
+
+\section{Experiments}
 
 \section{Conclusion}
 
